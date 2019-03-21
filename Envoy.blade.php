@@ -111,7 +111,8 @@
             echo 'Ascertain live dir is absent'
             cd {{ $item['app_dir'] }}
             pwd
-            [ -d {{ $item['app_live_dir'] }} ] || rm -rf {{ $item['app_live_dir'] }}
+            echo 'Removing {{ $item['app_live_dir'] }} folder if it exists'
+            echo "{{ $password }}" | sudo -S rm -rf {{ $item['app_live_dir'] }}
             ls -la
 
             echo 'Linking current release'
