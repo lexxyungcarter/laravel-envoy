@@ -1,4 +1,4 @@
-@servers(['web' => 'lexx@SERVER_IP_ADDRESS', 'local' => '127.0.0.1'])
+@servers(['web' => '<serverUsername>@<SERVER_IP_ADDRESS>', 'local' => '127.0.0.1'])
 
 @setup
     $release = date('YmdHis');

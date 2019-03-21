@@ -1,4 +1,4 @@
-# Sample Laravel Envoy Deployemnt Script
+# Sample Laravel Envoy Deployment Script
 
 The [Envoy.blade.php](https://github.com/lexxyungcarter/laravel-envoy/Envoy.blade.php) file contains a sample config file for automated deployments to production servers.
 
@@ -8,7 +8,7 @@ The script also works fine with the **CD/CI** practices of modern web developmen
 
 ## How to go about it
 
-Laravel envoy is pretty straigh-forward. Youc an read more details [over here](https://laravel.com/docs/5.8/envoy). 
+Laravel envoy is pretty straight-forward. You can read more details [over here](https://laravel.com/docs/5.8/envoy). 
 
 > NB:- Envoy is not tied to Laravel; in fact it is not tied to any programming language. Therefore, one can simply import the Envoy file to the root of their application and start enjoying the **Zero-Downtime** deployment process.
 
@@ -33,15 +33,15 @@ envoy run deploy --password=secret --npm=true
 ```
 Providing the password enables the script to modify folder owners and permissions. However, one can simply omit specifying the password.
 
-Also, providing `--npm=true` will run `npm istall` in the local directories if specified.
+Also, providing `--npm=true` will run `npm install` in the local directories if specified.
 
 ```bash
 envoy run deploy
 ```
 
 The script will:
-- Clone the repo to a new folder in the releases directory
-- Run `composer install` indide the new repository (release dir)
+- Clone the git repo to a new folder in the releases directory
+- Run `composer install` inside the new repository (release dir)
 - Link the `storage` and `.env` to the releases directory (symbolic links)
 - Ascertain the **Live** app directory is indeed available. If not, it creates one
 - Link the **Live** app directory to the release folder created earlier
@@ -53,4 +53,4 @@ Finally, after all tasks have completed running, a notifications is sent to **Sl
 
 ## Credits
 - [Lexx YungCarter](mailto:lexxyungcarter@gmail.com)
-- [Taylor Otwell - Laravel](https://laravel.com) - *for creating such an expressive, beautifu framework*
+- [Taylor Otwell - Laravel](https://laravel.com) - *for creating such an expressive, beautiful framework*
