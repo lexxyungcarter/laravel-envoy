@@ -149,7 +149,7 @@
             echo 'Local Project: {{ $item }}'
             echo '------------------------------------------'
 
-            cd ~/Sites/{{ $item }}
+            cd {{ $localProjectFolder }}/{{ $item }}
             pwd
 
             echo 'Pulling latest commit on existing branch'
