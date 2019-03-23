@@ -1,6 +1,6 @@
 # Sample Laravel Envoy Deployment Script
 
-The [Envoy.blade.php](https://github.com/lexxyungcarter/laravel-envoy/Envoy.blade.php) file contains a sample config file for automated deployments to production servers.
+The [Envoy.blade.php](https://github.com/lexxyungcarter/laravel-envoy/blob/master/Envoy.blade.php) file contains a sample config file for automated deployments to production servers.
 
 The script also works fine with the **CD/CI** practices of modern web development and deployment.
 
